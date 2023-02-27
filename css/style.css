@@ -21,11 +21,11 @@ h1,h2,h3{
     font-weight: normal;
 }
 
-h1.h2{
+h1{
     color: var(--color-secondary);
 }
 
-h2 .font--black, h3 {
+h2, h3 {
     color: var(--color-primary);
 }
 
@@ -38,11 +38,16 @@ h2,h3{
     font-size: 4rem;
 }
 
+h2{
+    text-align: center;
+}
+
 /*quote*/
 .quote{
-    font-size: 3rem;
+    font-size: 2rem;
     color: #124559;
     line-height: 1.2;
+    margin-top: 4;
 }
 
 .quote__text::before{
@@ -55,7 +60,7 @@ h2,h3{
 
 @media screen and (min-width:1024px){
     .quote{
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 }
 
@@ -86,15 +91,15 @@ h2,h3{
 
 /*grid*/
 .grid{
-    display: grid;
-}
+    display: grid;}
 
+@media screen and (min-width:768px){
 .grid--1x2{
-        grid-template-columns: repeat(2,1fr);
-        padding: 1rem;
-        gap: 1rem;
-        margin-top: 2rem;
-    }
+    grid-template-columns: repeat(2,1fr);
+    padding: 1rem 3rem;
+    gap: 1rem;
+   }
+}
 
 @media screen and (min-width:1024px){
     .grid--1x3{
@@ -108,3 +113,27 @@ h2,h3{
         margin-top: 2rem;
     }
 }
+
+/*partner*/
+.partner{
+    padding:3rem;
+}
+
+.partner__image{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: 30% 50%;
+    border-radius: 10px;
+}
+
+@media screen and (min-width:768px){
+.partner__image{
+    height:600px;
+    object-position: 30% 30%;}
+
+.quote{
+    margin-top: 9rem;
+}
+}
+

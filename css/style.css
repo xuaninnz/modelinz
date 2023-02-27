@@ -11,7 +11,7 @@ html{
 
 body{
     line-height: 1.5rem;
-    color: var(--color-secndary);
+    color: var(--color-secondary);
     font-weight: normal;
    }
 
@@ -38,8 +38,48 @@ h2,h3{
     font-size: 4rem;
 }
 
+/*quote*/
+.quote{
+    font-size: 3rem;
+    color: #124559;
+    line-height: 1.2;
+}
+
+.quote__text::before{
+    content: open-quote;
+}
+
+.quote__text::after{
+    content:close-quote;
+}
+
+@media screen and (min-width:1024px){
+    .quote{
+        font-size: 2rem;
+    }
+}
+
 /*icon*/
 .icon{
     width: 40px;
     height: 40px;
+}
+
+/*button*/
+.btn{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    padding: 2rem 7rem;
+    border: 1px solid var(--color-primary);
+    color: var(--color-accent);
+    white-space: nowrap;
+    margin: 1rem;
+    text-decoration: none;
+    
+}
+
+.btn:hover{
+    background: #e9ecef;
+    color: var(--color-primary);
+    transition: background 0.5s;
 }

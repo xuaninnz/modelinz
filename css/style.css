@@ -138,42 +138,28 @@ h4{
 .quote{
     margin-top: 9rem;
 }
-/*list*/
-.list{
-    list-style: none;
-    padding-left: 0;
 }
-
-.list__item{
-    color: var(--color-primary);
-    font-size: 3rem;
-    line-height: 1.5;
-    text-transform: uppercase;
-}
-
-.list__item > a{
-color: var(--color-primary);
-transition: color 0.3s;
-text-decoration: none;
-}
-
-.list__item > a:hover{
-    color: var(--color-accent);
-
-}
-
 /*collapsible*/
-.collapsible__header{
-    display: flex;
-    justify-content: space-between;
+.collapsible__menu{
+    transform: rotate(-90deg);
+    
 }
 
-.collapsible__heading{
-    margin-top: 0;
-    font-size: 3rem;
+.collapsible__content{
+    max-height: 0;
+    overflow: 0;
+    opacity: 0;
+    transition: all 0.3s;}
+
+.collapsible--expanded .collapsible__menu{
+transform: rotate(0);
+transition: tranform 0.3s;
 }
 
-
+.collapsible--expanded .collapsible__content{
+ max-height: 100vh;
+ opacity: 1;
+}
 /*navigation bar*/
 .nav{
     background: var(--color-secondary);
@@ -188,12 +174,29 @@ text-decoration: none;
     width: 100%;
     text-align: center;
     margin: 0;
-}
-.nav__image{
-    width: 100px;
-}
-.nav__toggler{
-    opacity: 1;
-}
+    list-style: none;
 }
 
+.nav__item{
+    color: var(--color-primary);
+    font-size: 3rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.nav__item > a{
+color: var(--color-primary);
+transition: color 0.3s;
+text-decoration: none;
+}
+
+.nav__item > a:hover{
+    color: var(--color-accent);
+
+}
+.nav__image{
+    width: 80px;
+    border-radius: 5px;
+}
+
+    

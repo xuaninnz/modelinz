@@ -1,3 +1,10 @@
+/*Basic*/
+:root{
+    --color-primary:black;
+    --color-secondary:white;
+    --color-accent:grey;
+}
+
 /*icon*/
 .icon{
     width: 40px;

@@ -135,5 +135,10 @@ h2{
 .quote{
     margin-top: 9rem;
 }
+/*list*/
+.list{
+    list-style: none;
+    padding-left: 0;
+}
 }
 

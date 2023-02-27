@@ -1,8 +1,41 @@
+html{
+    font-size: 62.5%;
+}
+
 /*Basic*/
 :root{
     --color-primary:black;
     --color-secondary:white;
     --color-accent:grey;
+}
+
+body{
+    line-height: 1.5rem;
+    color: var(--color-secndary);
+    font-weight: normal;
+   }
+
+/*Typography*/
+h1,h2,h3{
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+h1.h2{
+    color: var(--color-secondary);
+}
+
+h2 .font--black, h3 {
+    color: var(--color-primary);
+}
+
+.h1{
+    font-size: 2rem;
+    margin-bottom: 4rem;
+}
+
+h2,h3{
+    font-size: 4rem;
 }
 
 /*icon*/

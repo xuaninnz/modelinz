@@ -14,5 +14,90 @@
     />
     <title>Models In New Zealand</title>
   </head>
-  <body></body>
+  <body>
+    <div class="footer grid grid--1x2">
+      <div class="footer__contact">
+        <div class="contact">
+          <h3>Contact</h3>
+          <p>Model Park 12-14 South Lane, Auckland</p>
+          <p>+64 0210488533</p>
+          <p>+64 0234566322</p>
+          <a
+            class="contact__email"
+            href="mailto:xuaninnz@gmail.com"
+            style="text-decoration: none; font-size: 1.5rem; color: grey"
+            >modelinz@gmail.com</a
+          >
+        </div>
+        <div class="logo">
+          <svg class="icon">
+            <a href="http://www.facebook.com">
+              <use xlink:href="images/sprite.svg#facebook"></use>
+            </a>
+          </svg>
+          <svg class="icon">
+            <a href="http://www.tiktok.com">
+              <use xlink:href="images/sprite.svg#tiktok"></use>
+            </a>
+          </svg>
+          <svg class="icon__size">
+            <a href="http://www.instagram.com">
+              <use xlink:href="images/sprite.svg#ig"></use>
+            </a>
+          </svg>
+          <svg class="icon__size">
+            <a href="http://twitter.com">
+              <use xlink:href="images/sprite.svg#twitter"></use>
+            </a>
+          </svg>
+        </div>
+      </div>
+
+      <div class="footer__form">
+        <form
+          class="form"
+          action="https://formspree.io/f/myyawgap"
+          method="POST"
+        >
+          <div class="form__class">
+            <input
+              class="input"
+              id="name"
+              type="text"
+              placeholder="Name"
+              required
+              minlength="1"
+              maxlength="70"
+              name="name"
+            />
+          </div>
+          <div class="form__class">
+            <input
+              class="input"
+              id="email"
+              type="email"
+              placeholder="mail@example.com"
+              required
+              minlength="1"
+              maxlength="30"
+              name="email"
+            />
+          </div>
+          <div class="form__class">
+            <input
+              class="input"
+              id="subject"
+              type="text"
+              placeholder="Message"
+              required
+              minlength="1"
+              maxlength="50"
+              name="subject"
+            />
+          </div>
+          <button class="button" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>

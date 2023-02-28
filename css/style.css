@@ -136,6 +136,7 @@ height: 40px;
 /*grid*/
 .grid{
     display: grid;}
+    
 .grid--1x3{
         grid-template-columns: repeat(3,1fr);
          }

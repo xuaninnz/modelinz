@@ -15,89 +15,170 @@
     <title>Models In New Zealand</title>
   </head>
   <body>
-    <div class="footer grid grid--1x2">
-      <div class="footer__contact">
-        <div class="contact">
-          <h3>Contact</h3>
-          <p>Model Park 12-14 South Lane, Auckland</p>
-          <p>+64 0210488533</p>
-          <p>+64 0234566322</p>
-          <a
-            class="contact__email"
-            href="mailto:xuaninnz@gmail.com"
-            style="text-decoration: none; font-size: 1.5rem; color: grey"
-            >modelinz@gmail.com</a
-          >
-        </div>
-        <div class="logo">
-          <svg class="icon">
-            <a href="http://www.facebook.com">
-              <use xlink:href="images/sprite.svg#facebook"></use>
-            </a>
-          </svg>
-          <svg class="icon">
-            <a href="http://www.tiktok.com">
-              <use xlink:href="images/sprite.svg#tiktok"></use>
-            </a>
-          </svg>
-          <svg class="icon__size">
-            <a href="http://www.instagram.com">
-              <use xlink:href="images/sprite.svg#ig"></use>
-            </a>
-          </svg>
-          <svg class="icon__size">
-            <a href="http://twitter.com">
-              <use xlink:href="images/sprite.svg#twitter"></use>
-            </a>
-          </svg>
-        </div>
+    <nav class="nav collapsible collapsible--expanded">
+      <a href="/"><img class="nav__image" src="images/logo.png" /></a>
+      <svg class="icon collapsible__menu">
+        <use xlink:href="images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="nav__list collapsible__content">
+        <li class="nav__item"><a href="#">About</a></li>
+        <li class="nav__item"><a href="#">Our Model</a></li>
+        <li class="nav__item"><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="container grid grid--1x3">
+      <picture class="blur">
+        <source
+          type="image/webp"
+          srcset="images/header1@1x.webp 1x, images/header1@2x.webp 2x"
+        />
+        <source
+          type="image/jpg"
+          srcset="images/header1@1x.jpg 1x, images/header1@2x.jpg 2x"
+        />
+        <img class="header__image" src="images/header1@2xjpg" alt="" />
+      </picture>
+      <div class="center">
+        <picture class="blur">
+          <source
+            type="image/webp"
+            srcset="images/header@1x.webp 1x, images/header@2x.webp 2x"
+          />
+          <source
+            type="image/jpg"
+            srcset="images/header@1x.jpg 1x, images/header@2x.jpg 2x"
+          />
+          <img class="text__image" src="images/header@2xjpg" alt="" />
+        </picture>
+        <h1 class="h1" style="font-size: 2vw">Become model with us</h1>
+        <h2 class="h2" style="font-size: 4vw">Fashion agency</h2>
       </div>
-
-      <div class="footer__form">
-        <form
-          class="form"
-          action="https://formspree.io/f/myyawgap"
-          method="POST"
+      <picture class="blur">
+        <source
+          type="image/webp"
+          srcset="images/header2@1x.webp 1x, images/header2@2x.webp 2x"
+        />
+        <source
+          type="image/jpg"
+          srcset="images/header2@1x.jpg 1x, images/header2@2x.jpg 2x"
+        />
+        <img class="header__image" src="images/header2@2xjpg" alt="" />
+      </picture>
+    </div>
+    <div class="button__center">
+    <div class="vertical__center">
+    <button type="button" class="btn">Join Us</button></div></div>
+    <div class="card partner">
+      <h4>About</span></h4>
+    <div class="grid grid--1x2">
+        <picture>
+          <source
+            type="image/webp"
+            srcset="images/partner@1x.webp 1x, images/partner@2x.webp 2x"
+          />
+          <source
+            type="image/jpg"
+            srcset="images/partner@1x.jpg 1x, images/partner@2x.jpg 2x"
+          />
+          <img class="partner__image" src="images/partner@2xjpg" alt="" />
+        </picture>
+      <blockquote class="quote">
+          <p class="quote__text">
+            The MODELINZ has establised itself as one of the country's leading
+            modeling agencies,representing and managing models, helping them to
+            secure work and ensuring that they are properly compensated for their
+            services. 
+            
+            <p class="quote__text2">MODELINZ is a leading model agency in New Zealand, known for
+            it is professionalism, commmitment to diversity and inclusivity and
+            dedication to supporting it is models as they build successful careers
+            in the industry.
+        </p>
+          </p>
+        </blockquote>
+    </div>
+  </div>
+  <div class="footer grid grid--1x2">
+    <div class="footer__contact">
+      <div class="contact">
+        <h3>Contact</h3>
+        <p>Model Park 12-14 South Lane, Auckland</p>
+        <p>+64 0210488533</p>
+        <p>+64 0234566322</p>
+        <a
+          class="contact__email"
+          href="mailto:xuaninnz@gmail.com"
+          style="text-decoration: none; font-size: 1.5rem; color: grey"
+          >modelinz@gmail.com</a
         >
-          <div class="form__class">
-            <input
-              class="input"
-              id="name"
-              type="text"
-              placeholder="Name"
-              required
-              minlength="1"
-              maxlength="70"
-              name="name"
-            />
-          </div>
-          <div class="form__class">
-            <input
-              class="input"
-              id="email"
-              type="email"
-              placeholder="mail@example.com"
-              required
-              minlength="1"
-              maxlength="30"
-              name="email"
-            />
-          </div>
-          <div class="form__class">
-            <input
-              class="input"
-              id="subject"
-              type="text"
-              placeholder="Message"
-              required
-              minlength="1"
-              maxlength="50"
-              name="subject"
-            />
-          </div>
-          <button class="button" type="submit">SEND</button>
-        </form>
+      </div>
+      <div class="logo">
+        <svg class="icon">
+          <a href="http://www.facebook.com">
+            <use xlink:href="images/sprite.svg#facebook"></use>
+          </a>
+        </svg>
+        <svg class="icon">
+          <a href="http://www.tiktok.com">
+            <use xlink:href="images/sprite.svg#tiktok"></use>
+          </a>
+        </svg>
+        <svg class="icon__size">
+          <a href="http://www.instagram.com">
+            <use xlink:href="images/sprite.svg#ig"></use>
+          </a>
+        </svg>
+        <svg class="icon__size">
+          <a href="http://twitter.com">
+            <use xlink:href="images/sprite.svg#twitter"></use>
+          </a>
+        </svg>
       </div>
     </div>
+  
+    <div class="footer__form">
+      <form class="form" action="https://formspree.io/f/myyawgap" method="POST">
+        <div class="form__class">
+          <input
+            class="input"
+            id="name"
+            type="text"
+            placeholder="Name"
+            required
+            minlength="1"
+            maxlength="70"
+            name="name"
+          />
+        </div>
+        <div class="form__class">
+          <input
+            class="input"
+            id="email"
+            type="email"
+            placeholder="mail@example.com"
+            required
+            minlength="1"
+            maxlength="30"
+            name="email"
+          />
+        </div>
+        <div class="form__class">
+          <input
+            class="input"
+            id="subject"
+            type="text"
+            placeholder="Message"
+            required
+            minlength="1"
+            maxlength="50"
+            name="subject"
+          />
+        </div>
+        <button class="button" type="submit">SEND</button>
+      </form>
+    </div>
+  </div>
+  
+    <script src="js/main.js"></script>
   </body>
 </html>

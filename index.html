@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/sprite.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta name="keywords" content="HTML,CSS" />
     <meta
       name="description"
@@ -21,13 +22,13 @@
         <use xlink:href="images/sprite.svg#menu"></use>
       </svg>
       <ul class="nav__list collapsible__content">
-        <li class="nav__item"><a href="#">About</a></li>
+        <li class="nav__item"><a href="#section-About">About</a></li>
         <li class="nav__item"><a href="#">Our Model</a></li>
-        <li class="nav__item"><a href="#">Contact Us</a></li>
+        <li class="nav__item"><a href="#section-contactus">Contact Us</a></li>
       </ul>
     </nav>
     <div class="container grid grid--1x3">
-      <picture class="blur">
+      <picture class="blur" data-aos="fade-left">
         <source
           type="image/webp"
           srcset="images/header1@1x.webp 1x, images/header1@2x.webp 2x"
@@ -39,7 +40,7 @@
         <img class="header__image" src="images/header1@2xjpg" alt="" />
       </picture>
       <div class="center">
-        <picture class="blur">
+        <picture class="blur" data-aos="fade-down">
           <source
             type="image/webp"
             srcset="images/header@1x.webp 1x, images/header@2x.webp 2x"
@@ -53,7 +54,7 @@
         <h1 class="h1" style="font-size: 2vw">Become model with us</h1>
         <h2 class="h2" style="font-size: 4vw">Fashion agency</h2>
       </div>
-      <picture class="blur">
+      <picture class="blur" data-aos="fade-right">
         <source
           type="image/webp"
           srcset="images/header2@1x.webp 1x, images/header2@2x.webp 2x"
@@ -65,13 +66,13 @@
         <img class="header__image" src="images/header2@2xjpg" alt="" />
       </picture>
     </div>
-    <div class="button__center">
+    <div class="button__center" data-aos="fade-up">
     <div class="vertical__center">
     <button type="button" class="btn">Join Us</button></div></div>
     <div class="card partner">
-      <h4>About</span></h4>
+      <h4 data-aos="zoom-in" id="section-About">About</span></h4>
     <div class="grid grid--1x2">
-        <picture>
+        <picture data-aos="zoom-out-right">
           <source
             type="image/webp"
             srcset="images/partner@1x.webp 1x, images/partner@2x.webp 2x"
@@ -82,7 +83,7 @@
           />
           <img class="partner__image" src="images/partner@2xjpg" alt="" />
         </picture>
-      <blockquote class="quote">
+      <blockquote class="quote" data-aos="zoom-out-left">
           <p class="quote__text">
             The MODELINZ has establised itself as one of the country's leading
             modeling agencies,representing and managing models, helping them to
@@ -98,7 +99,7 @@
         </blockquote>
     </div>
   </div>
-  <div class="footer grid grid--1x2">
+  <div class="footer grid grid--1x2" data-aos="fade-right" id="section-contactus">
     <div class="footer__contact">
       <div class="contact">
         <h3>Contact</h3>
@@ -180,5 +181,9 @@
   </div>
   
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/model.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta name="keywords" content="HTML,CSS" />
     <meta
       name="description"
@@ -14,270 +16,479 @@
     <title>Our Models</title>
   </head>
   <body>
-    <h1>Our models</h1>
-    <div class="photo grid grid--1x4">
-      <div class="model">
-        <picture>
-          <source
-            type="image/webp"
-            srcset="images/model//one1@1x.webp 1x, images/model/one1@2x.webp 2x"
-          />
-          <source
-            type="image/jpg"
-            srcset="images/model/one1@1x.jpg 1x, images/model/one1@2x.jpg 2x"
-          />
-          <img class="header__image" src="images/model/one1@2xjpg" alt="" />
-        </picture>
-        <picture>
-          <source
-            type="image/webp"
-            srcset="images/model//one2@1x.webp 1x, images/model/one2@2x.webp 2x"
-          />
-          <source
-            type="image/jpg"
-            srcset="images/model/one2@1x.jpg 1x, images/model/one2@2x.jpg 2x"
-          />
-          <img class="image__hover" src="images/model/one2@2xjpg" alt="" />
-        </picture>
-      </div>
+    <nav class="nav collapsible">
+      <a href="/"><img class="nav__image" src="images/logo.png" /></a>
+      <svg class="icon collapsible__menu">
+        <use xlink:href="images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="nav__list collapsible__content">
+        <li class="nav__item"><a href="index.html#section-About">About</a></li>
+        <li class="nav__item"><a href="#">Our Model</a></li>
+        <li class="nav__item"><a href="#section-contactus">Contact Us</a></li>
+      </ul>
+    </nav>
+    <h1 class="model__font" data-aos="zoom-in">Our models</h1>
 
-      <div class="model">
-        <picture>
-          <source
-            type="image/webp"
-            srcset="images/model//two1@1x.webp 1x, images/model/two1@2x.webp 2x"
-          />
-          <source
-            type="image/jpg"
-            srcset="images/model/two1@1x.jpg 1x, images/model/two1@2x.jpg 2x"
-          />
-          <img class="header__image" src="images/model/two1@2xjpg" alt="" />
-        </picture>
-        <picture>
-          <source
-            type="image/webp"
-            srcset="images/model//two2@1x.webp 1x, images/model/two2@2x.webp 2x"
-          />
-          <source
-            type="image/jpg"
-            srcset="images/model/two2@1x.jpg 1x, images/model/two2@2x.jpg 2x"
-          />
-          <img class="image__hover" src="images/model/two2@2xjpg" alt="" />
-        </picture>
-      </div>
+    <div class="section" data-aos="flip-up">
+      <div class="photo grid grid--1x2 grid--1x4">
+        <div class="model__container">
+          <div class="model">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  images/model//one1@1x.webp 1x,
+                  images/model/one1@2x.webp  2x
+                "
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  images/model/one1@1x.jpg 1x,
+                  images/model/one1@2x.jpg 2x
+                "
+              />
+              <img
+                class="header__images"
+                src="images/model/one1@2xjpg"
+                alt=""
+              />
+            </picture>
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  images/model//one2@1x.webp 1x,
+                  images/model/one2@2x.webp  2x
+                "
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  images/model/one2@1x.jpg 1x,
+                  images/model/one2@2x.jpg 2x
+                "
+              />
+              <img class="image__hover" src="images/model/one2@2xjpg" alt="" />
+            </picture>
+          </div>
+          <h2 class="model__h2">Angela Rose</h2>
+        </div>
 
-      <div class="model">
-        <picture>
-          <source
-            type="image/webp"
-            srcset="
-              images/model//three1@1x.webp 1x,
-              images/model/three1@2x.webp  2x
-            "
-          />
-          <source
-            type="image/jpg"
-            srcset="
-              images/model/three1@1x.jpg 1x,
-              images/model/three1@2x.jpg 2x
-            "
-          />
-          <img class="header__image" src="images/model/three1@2xjpg" alt="" />
-        </picture>
+        <div class="model__container">
+          <div class="model">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  images/model//two1@1x.webp 1x,
+                  images/model/two1@2x.webp  2x
+                "
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  images/model/two1@1x.jpg 1x,
+                  images/model/two1@2x.jpg 2x
+                "
+              />
+              <img
+                class="header__images"
+                src="images/model/two1@2xjpg"
+                alt=""
+              />
+            </picture>
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  images/model//two2@1x.webp 1x,
+                  images/model/two2@2x.webp  2x
+                "
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  images/model/two2@1x.jpg 1x,
+                  images/model/two2@2x.jpg 2x
+                "
+              />
+              <img class="image__hover" src="images/model/two2@2xjpg" alt="" />
+            </picture>
+          </div>
+          <h2 class="model__h2">Ann</h2>
+        </div>
 
-        <picture>
-          <source
-            type="image/webp"
-            srcset="
-              images/model//three2@1x.webp 1x,
-              images/model/three2@2x.webp  2x
-            "
-          />
-          <source
-            type="image/jpg"
-            srcset="
-              images/model/three2@1x.jpg 1x,
-              images/model/three2@2x.jpg 2x
-            "
-          />
-          <img class="image__hover" src="images/model/three2@2xjpg" alt="" />
-        </picture>
-      </div>
+        <div class="model__container">
+          <div class="model">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  images/model//three1@1x.webp 1x,
+                  images/model/three1@2x.webp  2x
+                "
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  images/model/three1@1x.jpg 1x,
+                  images/model/three1@2x.jpg 2x
+                "
+              />
+              <img
+                class="header__images"
+                src="images/model/three1@2xjpg"
+                alt=""
+              />
+            </picture>
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  images/model//three2@1x.webp 1x,
+                  images/model/three2@2x.webp  2x
+                "
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  images/model/three2@1x.jpg 1x,
+                  images/model/three2@2x.jpg 2x
+                "
+              />
+              <img
+                class="image__hover"
+                src="images/model/three2@2xjpg"
+                alt=""
+              />
+            </picture>
+          </div>
+          <h2 class="model__h2">Lisa</h2>
+        </div>
 
-      <div class="model">
-        <picture>
-          <source
-            type="image/webp"
-            srcset="
-              images/model//four1@1x.webp 1x,
-              images/model/four1@2x.webp  2x
-            "
-          />
-          <source
-            type="image/jpg"
-            srcset="images/model/four1@1x.jpg 1x, images/model/four1@2x.jpg 2x"
-          />
-          <img class="header__image" src="images/model/four1@2xjpg" alt="" />
-        </picture>
-        <picture>
-          <source
-            type="image/webp"
-            srcset="
-              images/model//four2@1x.webp 1x,
-              images/model/four2@2x.webp  2x
-            "
-          />
-          <source
-            type="image/jpg"
-            srcset="images/model/four2@1x.jpg 1x, images/model/four2@2x.jpg 2x"
-          />
-          <img class="image__hover" src="images/model/four2@2xjpg" alt="" />
-        </picture>
-      </div>
-    </div>
-    <div class="text grid grid--1x4">
-      <h2>Angela Rose</h2>
-      <h2>Ann</h2>
-      <h2>Lisa</h2>
-      <h2>Anna Enn</h2>
-    </div>
-
-    <div class="photo grid grid--1x4">
-      <div class="model">
-        <picture>
-          <source
-            type="image/webp"
-            srcset="
-              images/model//five1@1x.webp 1x,
-              images/model/five1@2x.webp  2x
-            "
-          />
-          <source
-            type="image/jpg"
-            srcset="images/model/five1@1x.jpg 1x, images/model/five1@2x.jpg 2x"
-          />
-          <img class="header__image" src="images/model/five1@2xjpg" alt="" />
-        </picture>
-        <picture>
-          <source
-            type="image/webp"
-            srcset="
-              images/model//five2@1x.webp 1x,
-              images/model/five2@2x.webp  2x
-            "
-          />
-          <source
-            type="image/jpg"
-            srcset="images/model/five2@1x.jpg 1x, images/model/five2@2x.jpg 2x"
-          />
-          <img class="image__hover" src="images/model/five2@2xjpg" alt="" />
-        </picture>
-      </div>
-
-      <div class="model">
-        <picture>
-          <source
-            type="image/webp"
-            srcset="images/model//six1@1x.webp 1x, images/model/six1@2x.webp 2x"
-          />
-          <source
-            type="image/jpg"
-            srcset="images/model/six1@1x.jpg 1x, images/model/six1@2x.jpg 2x"
-          />
-          <img class="header__image" src="images/model/six1@2xjpg" alt="" />
-        </picture>
-        <picture>
-          <source
-            type="image/webp"
-            srcset="images/model//six2@1x.webp 1x, images/model/six2@2x.webp 2x"
-          />
-          <source
-            type="image/jpg"
-            srcset="images/model/six2@1x.jpg 1x, images/model/six2@2x.jpg 2x"
-          />
-          <img class="image__hover" src="images/model/six2@2xjpg" alt="" />
-        </picture>
-      </div>
-
-      <div class="model">
-        <picture>
-          <source
-            type="image/webp"
-            srcset="
-              images/model//seven1@1x.webp 1x,
-              images/model/seven1@2x.webp  2x
-            "
-          />
-          <source
-            type="image/jpg"
-            srcset="
-              images/model/seven1@1x.jpg 1x,
-              images/model/seven1@2x.jpg 2x
-            "
-          />
-          <img class="header__image" src="images/model/seven1@2xjpg" alt="" />
-        </picture>
-        <picture>
-          <source
-            type="image/webp"
-            srcset="
-              images/model//seven2@1x.webp 1x,
-              images/model/seven2@2x.webp  2x
-            "
-          />
-          <source
-            type="image/jpg"
-            srcset="
-              images/model/seven2@1x.jpg 1x,
-              images/model/seven2@2x.jpg 2x
-            "
-          />
-          <img class="image__hover" src="images/model/seven2@2xjpg" alt="" />
-        </picture>
-      </div>
-
-      <div class="model">
-        <picture>
-          <source
-            type="image/webp"
-            srcset="
-              images/model//eight1@1x.webp 1x,
-              images/model/eight1@2x.webp  2x
-            "
-          />
-          <source
-            type="image/jpg"
-            srcset="
-              images/model/eight1@1x.jpg 1x,
-              images/model/eight1@2x.jpg 2x
-            "
-          />
-          <img class="header__image" src="images/model/eight1@2xjpg" alt="" />
-        </picture>
-        <picture>
-          <source
-            type="image/webp"
-            srcset="
-              images/model//eight2@1x.webp 1x,
-              images/model/eight2@2x.webp  2x
-            "
-          />
-          <source
-            type="image/jpg"
-            srcset="
-              images/model/eight2@1x.jpg 1x,
-              images/model/eight2@2x.jpg 2x
-            "
-          />
-          <img class="image__hover" src="images/model/eight2@2xjpg" alt="" />
-        </picture>
+        <div class="model__container">
+          <div class="model">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  images/model//four1@1x.webp 1x,
+                  images/model/four1@2x.webp  2x
+                "
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  images/model/four1@1x.jpg 1x,
+                  images/model/four1@2x.jpg 2x
+                "
+              />
+              <img
+                class="header__images"
+                src="images/model/four1@2xjpg"
+                alt=""
+              />
+            </picture>
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  images/model//four2@1x.webp 1x,
+                  images/model/four2@2x.webp  2x
+                "
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  images/model/four2@1x.jpg 1x,
+                  images/model/four2@2x.jpg 2x
+                "
+              />
+              <img class="image__hover" src="images/model/four2@2xjpg" alt="" />
+            </picture>
+          </div>
+          <h2 class="model__h2">Anna Enn</h2>
+        </div>
       </div>
     </div>
-    <div class="text grid grid--1x4">
-      <h2>Celine</h2>
-      <h2>Zoey Ana</h2>
-      <h2>Tracy Lop</h2>
-      <h2>Diana Hel</h2>
+
+    <div class="section" data-aos="flip-up">
+      <div class="photo grid grid--1x2 grid--1x4">
+        <div class="model__container">
+          <div class="model">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  images/model//five1@1x.webp 1x,
+                  images/model/five1@2x.webp  2x
+                "
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  images/model/five1@1x.jpg 1x,
+                  images/model/five1@2x.jpg 2x
+                "
+              />
+              <img
+                class="header__images"
+                src="images/model/five1@2xjpg"
+                alt=""
+              />
+            </picture>
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  images/model//five2@1x.webp 1x,
+                  images/model/five2@2x.webp  2x
+                "
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  images/model/five2@1x.jpg 1x,
+                  images/model/five2@2x.jpg 2x
+                "
+              />
+              <img class="image__hover" src="images/model/five2@2xjpg" alt="" />
+            </picture>
+          </div>
+          <h2 class="model__h2">Celine</h2>
+        </div>
+
+        <div class="model__container">
+          <div class="model">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  images/model//six1@1x.webp 1x,
+                  images/model/six1@2x.webp  2x
+                "
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  images/model/six1@1x.jpg 1x,
+                  images/model/six1@2x.jpg 2x
+                "
+              />
+              <img
+                class="header__images"
+                src="images/model/six1@2xjpg"
+                alt=""
+              />
+            </picture>
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  images/model//six2@1x.webp 1x,
+                  images/model/six2@2x.webp  2x
+                "
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  images/model/six2@1x.jpg 1x,
+                  images/model/six2@2x.jpg 2x
+                "
+              />
+              <img class="image__hover" src="images/model/six2@2xjpg" alt="" />
+            </picture>
+          </div>
+          <h2 class="model__h2">Zoey Ana</h2>
+        </div>
+
+        <div class="model__container">
+          <div class="model">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  images/model//seven1@1x.webp 1x,
+                  images/model/seven1@2x.webp  2x
+                "
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  images/model/seven1@1x.jpg 1x,
+                  images/model/seven1@2x.jpg 2x
+                "
+              />
+              <img
+                class="header__images"
+                src="images/model/seven1@2xjpg"
+                alt=""
+              />
+            </picture>
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  images/model//seven2@1x.webp 1x,
+                  images/model/seven2@2x.webp  2x
+                "
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  images/model/seven2@1x.jpg 1x,
+                  images/model/seven2@2x.jpg 2x
+                "
+              />
+              <img
+                class="image__hover"
+                src="images/model/seven2@2xjpg"
+                alt=""
+              />
+            </picture>
+          </div>
+          <h2 class="model__h2">Tracy Lop</h2>
+        </div>
+
+        <div class="model__container">
+          <div class="model">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  images/model//eight1@1x.webp 1x,
+                  images/model/eight1@2x.webp  2x
+                "
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  images/model/eight1@1x.jpg 1x,
+                  images/model/eight1@2x.jpg 2x
+                "
+              />
+              <img
+                class="header__images"
+                src="images/model/eight1@2xjpg"
+                alt=""
+              />
+            </picture>
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  images/model//eight2@1x.webp 1x,
+                  images/model/eight2@2x.webp  2x
+                "
+              />
+              <source
+                type="image/jpg"
+                srcset="
+                  images/model/eight2@1x.jpg 1x,
+                  images/model/eight2@2x.jpg 2x
+                "
+              />
+              <img
+                class="image__hover"
+                src="images/model/eight2@2xjpg"
+                alt=""
+              />
+            </picture>
+          </div>
+          <h2 class="model__h2">Diana Hel</h2>
+        </div>
+      </div>
     </div>
+    <div class="footer__model">
+      <div class="grid grid--1x2" data-aos="fade-right" id="section-contactus">
+        <div class="footer__contact">
+          <div class="contact">
+            <h3>Contact</h3>
+            <p>Model Park 12-14 South Lane, Auckland</p>
+            <p>+64 0210488533</p>
+            <p>+64 0234566322</p>
+            <a
+              class="contact__email"
+              href="mailto:xuaninnz@gmail.com"
+              style="text-decoration: none; font-size: 1.5rem; color: grey"
+              >modelinz@gmail.com</a
+            >
+          </div>
+          <div class="logo">
+            <svg class="icon">
+              <a href="http://www.facebook.com">
+                <use xlink:href="images/sprite.svg#facebook"></use>
+              </a>
+            </svg>
+            <svg class="icon">
+              <a href="http://www.tiktok.com">
+                <use xlink:href="images/sprite.svg#tiktok"></use>
+              </a>
+            </svg>
+            <svg class="icon__size">
+              <a href="http://www.instagram.com">
+                <use xlink:href="images/sprite.svg#ig"></use>
+              </a>
+            </svg>
+            <svg class="icon__size">
+              <a href="http://twitter.com">
+                <use xlink:href="images/sprite.svg#twitter"></use>
+              </a>
+            </svg>
+          </div>
+        </div>
+        <div class="footer__form">
+          <form
+            class="form"
+            action="https://formspree.io/f/myyawgap"
+            method="POST"
+          >
+            <div class="form__class">
+              <input
+                class="input"
+                id="name"
+                type="text"
+                placeholder="Name"
+                required
+                minlength="1"
+                maxlength="70"
+                name="name"
+              />
+            </div>
+            <div class="form__class">
+              <input
+                class="input"
+                id="email"
+                type="email"
+                placeholder="mail@example.com"
+                required
+                minlength="1"
+                maxlength="30"
+                name="email"
+              />
+            </div>
+            <div class="form__class">
+              <input
+                class="input"
+                id="subject"
+                type="text"
+                placeholder="Message"
+                required
+                minlength="1"
+                maxlength="50"
+                name="subject"
+              />
+            </div>
+            <button class="button" type="submit">SEND</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -14,21 +14,36 @@ body{
 .grid{
     display: grid;}
 
-.grid--1x2{
+    .section .grid--1x2{
         grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+}
+
+.model__container{
+    padding-bottom: 1rem;
+}
+
+
+.footer__model{
+    margin:1rem;
 }
 @media screen and (min-width:1024px){
 
-    .grid--1x4{
+    .section .grid--1x4{
         grid-template-columns: repeat(4,1fr);
         padding: 1rem;
         gap: 2rem;
         margin-top: 2rem;
     }
+
+    .footer__model{
+        margin-top: 8rem;
+        margin-bottom: 4rem;
+    }
 }
 
 /*typography*/
-h1{
+.model__font{
     color: var(--color-primary) ;
     font-size: 3rem;
     margin: 3rem;
@@ -37,34 +52,36 @@ h1{
     text-align: center;
 }
 
-h2{
+.model__h2{
     font-size: 2rem;
-    margin: 1rem;
+    margin: 2rem 0 1rem 0;
     text-transform: uppercase;
     font-weight: normal;
     text-align: center;
     color:var(--color-primary);
 }
 
-/*model*/
-.photo{
-    max-width: 100vw;
-    height: 470px;
-    
+@media screen and (min-width:768px){
+    .model__h2{
+        margin: 3rem 0 0 0;
 }
+}
+/*model*/
+
 .model{
     display: inline-block;
     overflow: hidden;
     position: relative;
     width: 100%;
+    height: 320px;
     border-radius: 2px;
 }
 
-.header__image{
+.header__images{
     width: 100%;
 }
 
-.text{
+.text__model{
     max-width: 100%;
     height: 35px;
 }
@@ -85,3 +102,8 @@ h2{
     opacity: 1;
 }
 
+@media screen and (min-width:768px){
+    .model{
+        height: 470px;
+    }
+}
